@@ -1,0 +1,81 @@
+.hero {
+    background-image: url("/src/assets/images/yu yiming.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 2;
+    color: white;
+    width: 800px;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.heroContent h1 {
+    font-size: 5.5rem;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+    padding-left: 3rem;
+    opacity: 0.9;
+}
+
+.highlight {
+    color: #ff2b3d;
+    font-weight: 700;
+}
+
+/* .description {
+    font-size: 1.1rem;
+    opacity: 0.8;
+} */
+
+.cta {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    background-color: #ff5967;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #fc3f4f;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .heroContent h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+}

@@ -1,4 +1,5 @@
 import "./App.css";
+import Hero from "./components/Hero/Hero";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
         <nav>{/* Navigation */}</nav>
       </header>
 
-      <main>{/* Sections principales */}</main>
+      <main>{<Hero />}</main>
 
       <footer>{/* Footer */}</footer>
     </div>
