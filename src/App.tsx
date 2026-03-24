@@ -1,5 +1,6 @@
 import "./App.css";
 import Hero from "./components/Hero/Hero";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -9,8 +10,7 @@ function App() {
       </header>
 
       <main>{<Hero />}</main>
-
-      <footer>{/* Footer */}</footer>
+      <Footer />
     </div>
   );
 }
