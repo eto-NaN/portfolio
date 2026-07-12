@@ -1,0 +1,17 @@
+.navbar {
+    top:0;
+    right:0;
+    min-height: 2vh;
+    position: fixed;
+    z-index: 10;
+}
+
+.navbarContent {
+    display: flex;
+    justify-content: right;
+}
+
+.navbarContent img {
+    height: 50px;
+    border-radius: 0 0 0 10px;
+}
