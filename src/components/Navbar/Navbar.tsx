@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css";
+import githubLogo from '../../assets/images/github-logo.jpg';
 
 export default function Navbar() {
   return (
@@ -6,7 +7,7 @@ export default function Navbar() {
       <div className={styles.navbarContent}>
         <a href="https://github.com/eto-NaN">
           <img
-            src="/src/assets/images/github-logo.jpg"
+            src={githubLogo}
             alt="Check my github" />
         </a>
       </div>
