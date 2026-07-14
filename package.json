@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "metro-core": "^0.86.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4"
   },
