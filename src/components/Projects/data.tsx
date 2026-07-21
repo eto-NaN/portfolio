@@ -12,10 +12,10 @@ export const ProjectsCardTab : PorjectCard[] = [
 {
   id: 1,
   img: "",
-  title: "",
-  description: "",
-  link: "/",
-  tags: [],
+  title: "Kong-lang",
+  description: "Imperative programming language. I built the compiler from scratch.",
+  link: "https://github.com/KongKorporation/Kong-lang",
+  tags: ["Haskell", "Low-level"],
 },
 
 {
