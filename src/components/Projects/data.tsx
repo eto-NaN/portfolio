@@ -23,11 +23,11 @@ export const ProjectsCardTab : PorjectCard[] = [
 {
   id: 2,
   img: "",
-  title: "",
-  year: 0,
-  description: "",
-  link: "/",
-  tags: [],
+  title: "protocol-codegen-cpp",
+  year: 2026,
+  description: "A code generator that takes a network protocol definition in JSON and produces C++ structs with serialize/deserialize methods.",
+  link: "https://github.com/eto-NaN/protocol-codegen-cpp?tab=GPL-3.0-1-ov-file",
+  tags: ["Python", "C++"],
 },
 
 {
