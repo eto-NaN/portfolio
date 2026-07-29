@@ -33,11 +33,11 @@ export const ProjectsCardTab : PorjectCard[] = [
 {
   id: 3,
   img: "",
-  title: "",
-  year: 0,
-  description: "",
-  link: "/",
-  tags: [],
+  title: "Chess-analyzer",
+  year: 2025,
+  description: "Neural network generator and training to analyze a chess board and determine winning or not positions.",
+  link: "https://github.com/eto-NaN/chess-analyzer",
+  tags: ["Rust", "AI"],
 },
 
 {
