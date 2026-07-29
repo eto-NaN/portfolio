@@ -12,7 +12,8 @@
   "dependencies": {
     "metro-core": "^0.86.0",
     "react": "^19.2.4",
-    "react-dom": "^19.2.4"
+    "react-dom": "^19.2.4",
+    "reactjs-popup": "^2.0.6"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.4",
