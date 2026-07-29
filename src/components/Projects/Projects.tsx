@@ -32,7 +32,7 @@ export default function Projects() {
                 ))}
               </div>
               <Popup trigger={<button>view details -&gt;</button>} modal nested contentStyle={{
-                  width: '60%',
+                  width: '50%',
                   margin: 0,
                 }} overlayStyle={{
                     background: 'rgba(0,0,0,0.5)',
@@ -41,7 +41,7 @@ export default function Projects() {
                     justifyContent: 'center',
                   }}>
                 <div className={styles.projectCardPopup}>
-                  <div className={styles.projectCardHeader}>
+                  <div className={styles.projectCardPopupHeader}>
                   <h3>{project.title}</h3>
                   <a href={project.link}>
                     <img

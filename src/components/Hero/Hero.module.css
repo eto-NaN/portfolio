@@ -21,6 +21,7 @@
     position: relative;
     z-index: 2;
     color: white;
+    text-shadow: 10px 10px 20px rgba(0, 0, 0, 1);
     width: 800px;
     padding: 1rem;
     gap: 1rem;
@@ -38,7 +39,7 @@
 }
 
 .highlight {
-    color: #495393;
+    color: #2B335D;
     font-weight: 700;
 }
 
