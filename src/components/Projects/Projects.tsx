@@ -6,18 +6,24 @@ import Popup from 'reactjs-popup';
 export default function Projects() {
   return (
     <section className={styles.projects} aria-label="Projects section">
+      <div className={styles.projectsHeader}>
+        <h1>My projects</h1>
+        <p>Few projects realized alone or with my crew</p>
+      </div>
       <div className={styles.projectsContent}>
         {ProjectsCardTab.map((project) => (
           <div className={styles.projectCard} key={project.id}>
             <div className={styles.projectCardHeader}>
-            <h3>{project.title}</h3>
-            <a href={project.link}>
-              <img
-                src={githubLogo}
-                alt="Check my github" />
-            </a>
+            <div className={styles.projectCardHeaderFirstLine}>
+              <h3>{project.title}</h3>
+              <a href={project.link}>
+                <img
+                  src={githubLogo}
+                  alt="Check my github" />
+              </a>
             </div>
-            <p className={styles.projectCardYear}>{project.year}</p>
+              <p className={styles.projectCardYear}>{project.year}</p>
+            </div>
             <p>{project.shortDescription}</p>
             <div className={styles.projectCardfooter}>
               <div className={styles.projectCardtags}>
@@ -25,7 +31,7 @@ export default function Projects() {
                 <p>{tag}</p>
                 ))}
               </div>
-              <Popup trigger={<button>view details</button>} modal nested contentStyle={{
+              <Popup trigger={<button>view details -&gt;</button>} modal nested contentStyle={{
                   width: '60%',
                   margin: 0,
                 }} overlayStyle={{

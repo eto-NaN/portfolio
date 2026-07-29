@@ -7,6 +7,7 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <div className="app">
+      <div className="siteBackground" aria-hidden="true" />
       <header>
         <nav>{<Navbar />}</nav>
       </header>
