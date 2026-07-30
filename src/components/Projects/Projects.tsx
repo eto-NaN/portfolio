@@ -53,6 +53,7 @@ export default function Projects() {
           >
             <div className={styles.projectCardPopup}>
               <div className={styles.projectCardPopupHeader}>
+                <p>{project.year}</p>
                 <h3>{project.title}</h3>
                 <a href={project.link}>
                   <img
