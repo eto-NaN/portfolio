@@ -5,7 +5,7 @@ import Popup from 'reactjs-popup';
 
 export default function Projects() {
   return (
-    <section className={styles.projects} aria-label="Projects section">
+    <section id="projects" className={styles.projects} aria-label="Projects section">
       <div className={styles.projectsHeader}>
         <h1>My projects</h1>
         <p>Few projects realized alone or with my crew</p>
@@ -41,7 +41,7 @@ export default function Projects() {
             modal
             nested
             contentStyle={{
-              width: '50%',
+              width: 'min(900px, 92vw)',
               margin: 0,
             }}
             overlayStyle={{
@@ -49,6 +49,7 @@ export default function Projects() {
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
+              padding: '12px',
             }}
           >
             <div className={styles.projectCardPopup}>

@@ -20,4 +20,24 @@ main {
   background-size: cover;
   background-position: left;
   background-repeat: no-repeat;
+
+  transition: filter 380ms ease, transform 380ms ease;
+  will-change: filter, transform;
+}
+
+.siteBackgroundBlurred {
+  filter: blur(10px);
+  transform: scale(1.035);
+}
+
+@media (max-width: 1024px) {
+  .siteBackground {
+    background-position: 40% center;
+  }
+}
+
+@media (max-width: 768px) {
+  .siteBackground {
+    background-position: center;
+  }
 }

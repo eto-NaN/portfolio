@@ -1,6 +1,6 @@
 .navbar {
-    top:0;
-    right:0;
+    top: 0;
+    right: 0;
     min-height: 2vh;
     position: fixed;
     z-index: 10;
@@ -11,7 +11,23 @@
     justify-content: right;
 }
 
+.navbarContent a {
+    display: inline-flex;
+}
+
 .navbarContent img {
     height: 50px;
     border-radius: 0 0 0 10px;
+}
+
+@media (max-width: 768px) {
+    .navbarContent img {
+        height: 42px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbarContent img {
+        height: 36px;
+    }
 }

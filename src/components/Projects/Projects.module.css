@@ -17,8 +17,6 @@
   pointer-events: none;
 
   background-color: rgba(8, 10, 18, 0.4);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 
   mask-image: linear-gradient(
     to bottom,
@@ -203,4 +201,107 @@
     align-items: center;
     padding-bottom: 14px;
     border-bottom: 1px solid rgba(220, 220, 250, 0.3);
+}
+
+@media (max-width: 1024px) {
+  .projects {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 4rem 1.25rem;
+  }
+
+  .projectsHeader {
+    width: 100%;
+    margin-top: 12px;
+    margin-bottom: 28px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .projectsContent {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .projectCard {
+    min-width: 300px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects {
+    padding: 3rem 1rem;
+  }
+
+
+
+  .projectsHeader h1 {
+    font-size: 30px;
+    margin-bottom: 14px;
+  }
+
+  .projectsHeader p {
+    font-size: 16px;
+  }
+
+  .projectsContent p {
+    font-size: 16px;
+  }
+
+  .projectCard {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    height: auto;
+    min-height: 220px;
+  }
+
+  .projectCardtags p {
+    font-size: 0.8rem;
+  }
+
+  .projectCardPopup {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .projectCardPopup h3 {
+    font-size: 18px;
+  }
+
+  .projectCardPopup p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .projects {
+    padding: 2.2rem 0.75rem;
+  }
+
+  .projectsHeader h1 {
+    font-size: 26px;
+  }
+
+  .projectsHeader p {
+    font-size: 15px;
+  }
+
+  .projectCard {
+    min-height: 210px;
+    padding: 9px;
+  }
+
+  .projectCardHeaderFirstLine img,
+  .projectCardPopup img {
+    width: 26px;
+  }
+
+  .projectCardfooter span {
+    font-size: 0.72rem;
+  }
 }
