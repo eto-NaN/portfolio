@@ -140,7 +140,7 @@
     border-radius: 90px;
     border-width: 1px;
     border-style: solid;
-    background-color: rgba(0, 230, 250, 0.3 );
+    background-color: rgba(0, 230, 250, 0.3);
     border-color: #E6C0CB;
     padding: 0.25rem 0.6rem;
     margin: 0;
@@ -155,11 +155,11 @@
 
 .projectCard:hover .projectCardfooter span {
     transform: scale(1.1);
-    color: #8289AD;
+    color: rgba(150, 190, 250, 1);
 }
 
 .projectCardPopup {
-    background: linear-gradient(160deg, rgba(150, 0, 80, 0.75), rgba(20, 4, 10, 0.95));
+    background: linear-gradient(160deg, rgba(150, 0, 80, 0.94), rgba(20, 4, 10, 0.94));
     color: white;
     display: flex;
     flex-direction: column;
@@ -174,23 +174,16 @@
     gap: 16px;
 }
 
-.projectCardPopupHeader {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 14px;
-    border-bottom: 1px solid rgba(230, 192, 203, 0.3);
-}
-
 .projectCardPopup h3 {
     font-size: 20px;
     margin: 0;
 }
 
 .projectCardPopup p {
+    white-space: pre-line;
     font-size: 15px;
     line-height: 1.7;
-    color: #e1c8d0;
+    color: white;
     margin: 0;
 }
 
@@ -202,4 +195,12 @@
 
 .projectCardPopup img:hover {
     transform: scale(1.1);
+}
+
+.projectCardPopupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(220, 220, 250, 0.3);
 }
