@@ -95,7 +95,15 @@
     border-style: solid;
     border-color: #E6C0CB;
     padding: 10px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    transition: background 280ms ease;
+}
+
+.projectCard:hover {
+    border-width: 2px;
+    border-color: #BD6384;
+    cursor: pointer;
+    background: rgba(250, 20, 50, 0.3);
 }
 
 .projectCardHeaderFirstLine {
@@ -107,6 +115,11 @@
 .projectCardHeaderFirstLine img {
     width: 30px;
     border-radius: 10px;
+    transition: transform 80ms ease;
+}
+
+.projectCardHeaderFirstLine img:hover {
+    transform: scale(1.1);
 }
 
 .projectCardfooter {
@@ -134,12 +147,15 @@
     font-size: 0.9rem;
 }
 
-.projectCardfooter button {
-    border-radius: 10px;
+.projectCardfooter span {
+    font-size: 0.8rem;
     padding: 5px;
-    border-width: 0px;
-    background-color: transparent;
-    color: white;
+    transition: transform 100ms ease, color 100ms ease;
+}
+
+.projectCard:hover .projectCardfooter span {
+    transform: scale(1.1);
+    color: #8289AD;
 }
 
 .projectCardPopup {
@@ -173,4 +189,9 @@
 .projectCardPopup img {
     width: 30px;
     border-radius: 10px;
+    transition: transform 80ms ease;
+}
+
+.projectCardPopup img:hover {
+    transform: scale(1.1);
 }

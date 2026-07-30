@@ -12,48 +12,57 @@ export default function Projects() {
       </div>
       <div className={styles.projectsContent}>
         {ProjectsCardTab.map((project) => (
-          <div className={styles.projectCard} key={project.id}>
-            <div className={styles.projectCardHeader}>
-            <div className={styles.projectCardHeaderFirstLine}>
-              <h3>{project.title}</h3>
-              <a href={project.link}>
-                <img
-                  src={githubLogo}
-                  alt="Check my github" />
-              </a>
-            </div>
-              <p className={styles.projectCardYear}>{project.year}</p>
-            </div>
-            <p>{project.shortDescription}</p>
-            <div className={styles.projectCardfooter}>
-              <div className={styles.projectCardtags}>
-                {project.tags.map((tag) => (
-                <p>{tag}</p>
-                ))}
-              </div>
-              <Popup trigger={<button>view details -&gt;</button>} modal nested contentStyle={{
-                  width: '50%',
-                  margin: 0,
-                }} overlayStyle={{
-                    background: 'rgba(0,0,0,0.5)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                  }}>
-                <div className={styles.projectCardPopup}>
-                  <div className={styles.projectCardPopupHeader}>
-                  <h3>{project.title}</h3>
-                  <a href={project.link}>
-                    <img
-                      src={githubLogo}
-                      alt="Check my github" />
+          <Popup
+            key={project.id}
+            trigger={
+              <div className={styles.projectCard}>
+                <div className={styles.projectCardHeader}>
+                  <div className={styles.projectCardHeaderFirstLine}>
+                    <h3>{project.title}</h3>
+                    <a href={project.link} onClick={(e) => e.stopPropagation()}>
+                      <img
+                        src={githubLogo}
+                        alt="Check my github" />
                     </a>
                   </div>
-                  <p>{project.bigDescription}</p>
+                  <p className={styles.projectCardYear}>{project.year}</p>
                 </div>
-              </Popup>
+                <p>{project.shortDescription}</p>
+                <div className={styles.projectCardfooter}>
+                  <div className={styles.projectCardtags}>
+                    {project.tags.map((tag) => (
+                      <p key={tag}>{tag}</p>
+                    ))}
+                  </div>
+                  <span>view ↗</span>
+                </div>
               </div>
-          </div>
+            }
+            modal
+            nested
+            contentStyle={{
+              width: '50%',
+              margin: 0,
+            }}
+            overlayStyle={{
+              background: 'rgba(0,0,0,0.5)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <div className={styles.projectCardPopup}>
+              <div className={styles.projectCardPopupHeader}>
+                <h3>{project.title}</h3>
+                <a href={project.link}>
+                  <img
+                    src={githubLogo}
+                    alt="Check my github" />
+                </a>
+              </div>
+              <p>{project.bigDescription}</p>
+            </div>
+          </Popup>
         ))}
       </div>
     </section>
