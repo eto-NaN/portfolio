@@ -15,7 +15,9 @@ function App() {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        setIsProjectsVisible(entry.isIntersecting && entry.intersectionRatio > 0.15);
+        setIsProjectsVisible(
+          entry.isIntersecting && entry.intersectionRatio > 0.15,
+        );
       },
       {
         threshold: [0, 0.15, 0.35, 0.6],

@@ -1,52 +1,52 @@
 .projects {
-  min-height: 100svh;
-  position: relative;
-  overflow: hidden;
+    min-height: 100svh;
+    position: relative;
+    overflow: hidden;
 
-  display: flex;
-  align-items: center;
-  padding: 5rem 2rem;
-  box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    padding: 5rem 2rem;
+    box-sizing: border-box;
 }
 
 .projects::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
 
-  background-color: rgba(8, 10, 18, 0.4);
+    background-color: rgba(8, 10, 18, 0.4);
 
-  mask-image: linear-gradient(
-    to bottom,
-    transparent 0,
-    rgba(0, 0, 0, 0.4) 12vh,
-    black 30vh
-  );
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0,
+        rgba(0, 0, 0, 0.4) 12vh,
+        black 30vh
+    );
 
-  -webkit-mask-image: linear-gradient(
-    to bottom,
-    transparent 0,
-    rgba(0, 0, 0, 0.4) 12vh,
-    black 30vh
-  );
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0,
+        rgba(0, 0, 0, 0.4) 12vh,
+        black 30vh
+    );
 }
 
 .projectsContent {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 
-  width: min(1200px, 100%);
-  margin-inline: auto;
+    width: min(1200px, 100%);
+    margin-inline: auto;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
 
-  gap: 30px 30px;
-  margin: 5px;
+    gap: 30px 30px;
+    margin: 5px;
 }
 
 .projectsContent p {
@@ -69,13 +69,13 @@
 
 .projectsHeader h1 {
     font-size: 40px;
-    color: #F9F1F3;
+    color: #f9f1f3;
     margin-bottom: 30px;
 }
 
 .projectsHeader p {
     font-size: 20px;
-    color: #e1c8d0
+    color: #e1c8d0;
 }
 
 .projectCard {
@@ -91,7 +91,7 @@
     border-radius: 10px;
     border-width: 1px;
     border-style: solid;
-    border-color: #E6C0CB;
+    border-color: #e6c0cb;
     padding: 10px;
     box-sizing: border-box;
     transition: background 280ms ease;
@@ -99,7 +99,7 @@
 
 .projectCard:hover {
     border-width: 2px;
-    border-color: #BD6384;
+    border-color: #bd6384;
     cursor: pointer;
     background: rgba(250, 20, 50, 0.3);
 }
@@ -139,7 +139,7 @@
     border-width: 1px;
     border-style: solid;
     background-color: rgba(0, 230, 250, 0.3);
-    border-color: #E6C0CB;
+    border-color: #e6c0cb;
     padding: 0.25rem 0.6rem;
     margin: 0;
     font-size: 0.9rem;
@@ -148,7 +148,9 @@
 .projectCardfooter span {
     font-size: 0.8rem;
     padding: 5px;
-    transition: transform 100ms ease, color 100ms ease;
+    transition:
+        transform 100ms ease,
+        color 100ms ease;
 }
 
 .projectCard:hover .projectCardfooter span {
@@ -157,7 +159,11 @@
 }
 
 .projectCardPopup {
-    background: linear-gradient(160deg, rgba(150, 0, 80, 0.94), rgba(20, 4, 10, 0.94));
+    background: linear-gradient(
+        160deg,
+        rgba(150, 0, 80, 0.94),
+        rgba(20, 4, 10, 0.94)
+    );
     color: white;
     display: flex;
     flex-direction: column;
@@ -166,7 +172,7 @@
     border-radius: 10px;
     border-width: 1px;
     border-style: solid;
-    border-color: #E6C0CB;
+    border-color: #e6c0cb;
     padding: 24px;
     box-sizing: border-box;
     gap: 16px;
@@ -204,104 +210,102 @@
 }
 
 @media (max-width: 1024px) {
-  .projects {
-    flex-direction: column;
-    align-items: stretch;
-    padding: 4rem 1.25rem;
-  }
+    .projects {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 4rem 1.25rem;
+    }
 
-  .projectsHeader {
-    width: 100%;
-    margin-top: 12px;
-    margin-bottom: 28px;
-    align-items: center;
-    text-align: center;
-  }
+    .projectsHeader {
+        width: 100%;
+        margin-top: 12px;
+        margin-bottom: 28px;
+        align-items: center;
+        text-align: center;
+    }
 
-  .projectsContent {
-    width: 100%;
-    margin: 0;
-    justify-content: center;
-    gap: 20px;
-  }
+    .projectsContent {
+        width: 100%;
+        margin: 0;
+        justify-content: center;
+        gap: 20px;
+    }
 
-  .projectCard {
-    min-width: 300px;
-    max-width: 100%;
-  }
+    .projectCard {
+        min-width: 300px;
+        max-width: 100%;
+    }
 }
 
 @media (max-width: 768px) {
-  .projects {
-    padding: 3rem 1rem;
-  }
+    .projects {
+        padding: 3rem 1rem;
+    }
 
+    .projectsHeader h1 {
+        font-size: 30px;
+        margin-bottom: 14px;
+    }
 
+    .projectsHeader p {
+        font-size: 16px;
+    }
 
-  .projectsHeader h1 {
-    font-size: 30px;
-    margin-bottom: 14px;
-  }
+    .projectsContent p {
+        font-size: 16px;
+    }
 
-  .projectsHeader p {
-    font-size: 16px;
-  }
+    .projectCard {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: auto;
+        min-height: 220px;
+    }
 
-  .projectsContent p {
-    font-size: 16px;
-  }
+    .projectCardtags p {
+        font-size: 0.8rem;
+    }
 
-  .projectCard {
-    width: 100%;
-    min-width: 0;
-    max-width: 100%;
-    height: auto;
-    min-height: 220px;
-  }
+    .projectCardPopup {
+        padding: 16px;
+        gap: 12px;
+    }
 
-  .projectCardtags p {
-    font-size: 0.8rem;
-  }
+    .projectCardPopup h3 {
+        font-size: 18px;
+    }
 
-  .projectCardPopup {
-    padding: 16px;
-    gap: 12px;
-  }
-
-  .projectCardPopup h3 {
-    font-size: 18px;
-  }
-
-  .projectCardPopup p {
-    font-size: 14px;
-    line-height: 1.6;
-  }
+    .projectCardPopup p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
 }
 
 @media (max-width: 480px) {
-  .projects {
-    padding: 2.2rem 0.75rem;
-  }
+    .projects {
+        padding: 2.2rem 0.75rem;
+    }
 
-  .projectsHeader h1 {
-    font-size: 26px;
-  }
+    .projectsHeader h1 {
+        font-size: 26px;
+    }
 
-  .projectsHeader p {
-    font-size: 15px;
-  }
+    .projectsHeader p {
+        font-size: 15px;
+    }
 
-  .projectCard {
-    min-height: 210px;
-    padding: 9px;
-  }
+    .projectCard {
+        min-height: 210px;
+        padding: 9px;
+    }
 
-  .projectCardHeaderFirstLine img,
-  .projectCardPopup img {
-    width: 26px;
-  }
+    .projectCardHeaderFirstLine img,
+    .projectCardPopup img {
+        width: 26px;
+    }
 
-  .projectCardfooter span {
-    font-size: 0.72rem;
-  }
+    .projectCardfooter span {
+        font-size: 0.72rem;
+    }
 }

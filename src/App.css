@@ -11,33 +11,35 @@ main {
 }
 
 .siteBackground {
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  pointer-events: none;
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
 
-  background-image: url("./assets/images/yu yiming2.jpg");
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
+    background-image: url("./assets/images/yu yiming2.jpg");
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
 
-  transition: filter 380ms ease, transform 380ms ease;
-  will-change: filter, transform;
+    transition:
+        filter 380ms ease,
+        transform 380ms ease;
+    will-change: filter, transform;
 }
 
 .siteBackgroundBlurred {
-  filter: blur(10px);
-  transform: scale(1.035);
+    filter: blur(10px);
+    transform: scale(1.035);
 }
 
 @media (max-width: 1024px) {
-  .siteBackground {
-    background-position: 40% center;
-  }
+    .siteBackground {
+        background-position: 40% center;
+    }
 }
 
 @media (max-width: 768px) {
-  .siteBackground {
-    background-position: center;
-  }
+    .siteBackground {
+        background-position: center;
+    }
 }

@@ -1,11 +1,15 @@
 import styles from "./Projects.module.css";
 import { ProjectsCardTab } from "./data.tsx";
-import githubLogo from '../../assets/images/github-logo.jpg';
-import Popup from 'reactjs-popup';
+import githubLogo from "../../assets/images/github-logo.jpg";
+import Popup from "reactjs-popup";
 
 export default function Projects() {
   return (
-    <section id="projects" className={styles.projects} aria-label="Projects section">
+    <section
+      id="projects"
+      className={styles.projects}
+      aria-label="Projects section"
+    >
       <div className={styles.projectsHeader}>
         <h1>My projects</h1>
         <p>Few projects realized alone or with my crew</p>
@@ -20,9 +24,7 @@ export default function Projects() {
                   <div className={styles.projectCardHeaderFirstLine}>
                     <h3>{project.title}</h3>
                     <a href={project.link} onClick={(e) => e.stopPropagation()}>
-                      <img
-                        src={githubLogo}
-                        alt="Check my github" />
+                      <img src={githubLogo} alt="Check my github" />
                     </a>
                   </div>
                   <p className={styles.projectCardYear}>{project.year}</p>
@@ -41,15 +43,15 @@ export default function Projects() {
             modal
             nested
             contentStyle={{
-              width: 'min(900px, 92vw)',
+              width: "min(900px, 92vw)",
               margin: 0,
             }}
             overlayStyle={{
-              background: 'rgba(0,0,0,0.5)',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              padding: '12px',
+              background: "rgba(0,0,0,0.5)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              padding: "12px",
             }}
           >
             <div className={styles.projectCardPopup}>
@@ -57,9 +59,7 @@ export default function Projects() {
                 <p>{project.year}</p>
                 <h3>{project.title}</h3>
                 <a href={project.link}>
-                  <img
-                    src={githubLogo}
-                    alt="Check my github" />
+                  <img src={githubLogo} alt="Check my github" />
                 </a>
               </div>
               <p>{project.bigDescription}</p>
