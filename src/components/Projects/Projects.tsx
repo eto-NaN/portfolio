@@ -28,7 +28,7 @@ export default function Projects() {
                       target="_blank"
                       onClick={(e) => e.stopPropagation()}
                     >
-                      <img src={githubLogo} alt="Check the project on github" />
+                      <img src={githubLogo} alt="Github icon" />
                     </a>
                   </div>
                   <p className={styles.projectCardYear}>{project.year}</p>
@@ -63,7 +63,7 @@ export default function Projects() {
                 <p>{project.year}</p>
                 <h3>{project.title}</h3>
                 <a href={project.link} target="_blank">
-                  <img src={githubLogo} alt="Check the project on github" />
+                  <img src={githubLogo} alt="Github icon" />
                 </a>
               </div>
               <p>{project.bigDescription}</p>

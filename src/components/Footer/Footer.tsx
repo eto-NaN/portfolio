@@ -8,13 +8,13 @@ export default function Footer() {
       <p>© 2026 Pierre Pruvost</p>
       <div className={styles.footerLinks}>
         <a href="mailto:pierre.pruvost@epitech.eu" target="_blank">
-          <img src={mailLogo} alt="Check my github" />
+          <img src={mailLogo} alt="Mail icon" />
         </a>
         <a
           href="https://www.linkedin.com/in/pierre-pruvost-132121243/"
           target="_blank"
         >
-          <img src={linkedinLogo} alt="Check my linkedin" />
+          <img src={linkedinLogo} alt="Linkedin icon" />
         </a>
       </div>
     </footer>

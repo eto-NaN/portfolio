@@ -6,7 +6,7 @@ export default function Navbar() {
     <section className={styles.navbar} aria-label="Navbar section">
       <div className={styles.navbarContent}>
         <a href="https://github.com/eto-NaN" target="_blank">
-          <img src={githubLogo} alt="Check my github" />
+          <img src={githubLogo} alt="Github icon" />
         </a>
       </div>
     </section>
