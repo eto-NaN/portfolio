@@ -23,8 +23,12 @@ export default function Projects() {
                 <div className={styles.projectCardHeader}>
                   <div className={styles.projectCardHeaderFirstLine}>
                     <h3>{project.title}</h3>
-                    <a href={project.link} onClick={(e) => e.stopPropagation()}>
-                      <img src={githubLogo} alt="Check my github" />
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      onClick={(e) => e.stopPropagation()}
+                    >
+                      <img src={githubLogo} alt="Check the project on github" />
                     </a>
                   </div>
                   <p className={styles.projectCardYear}>{project.year}</p>
@@ -58,8 +62,8 @@ export default function Projects() {
               <div className={styles.projectCardPopupHeader}>
                 <p>{project.year}</p>
                 <h3>{project.title}</h3>
-                <a href={project.link}>
-                  <img src={githubLogo} alt="Check my github" />
+                <a href={project.link} target="_blank">
+                  <img src={githubLogo} alt="Check the project on github" />
                 </a>
               </div>
               <p>{project.bigDescription}</p>
