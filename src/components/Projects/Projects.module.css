@@ -100,7 +100,7 @@
 .projectCard:hover {
     border-color: #bd6384;
     cursor: pointer;
-    background: rgba(250, 0, 130, 0.4);
+    background: rgba(250, 0, 120, 0.45);
 }
 
 .projectCardHeaderFirstLine {
