@@ -40,6 +40,6 @@ main {
 
 @media (max-width: 768px) {
     .siteBackground {
-        background-position: center;
+        background-position: 52% center;
     }
 }
