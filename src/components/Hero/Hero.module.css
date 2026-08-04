@@ -22,7 +22,7 @@
     position: relative;
     z-index: 2;
     color: white;
-    text-shadow: 0 14px 36px rgba(0, 0, 0, 0.65);
+    text-shadow: 1px 1px 2px black;
     width: min(700px, 100%);
     padding: 1rem;
 
@@ -43,7 +43,7 @@
 }
 
 .highlight {
-    color: #2b335d;
+    color: #495393;
     font-weight: 700;
 }
 
@@ -69,6 +69,18 @@
 .cta:hover {
     background-color: #fc3f4f;
     transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 1.5rem 1rem;
+        align-items: flex-start;
+        padding-top: 15svh;
+    }
+
+    .description {
+        text-align: left;
+    }
 }
 
 @media (max-width: 768px) {
