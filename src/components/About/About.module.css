@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100svh;
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutTexts {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    width: 700px;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+.aboutCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 280px;
+    height: 100%;
+    margin-right: 40px;
+    background-color: #af2638;
+    box-shadow: 0px 0px 10px #211f1f;
+    border-radius: 15px;
+}
+
+.aboutCard img {
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 250px;
+}
+
+.aboutJob {
+    color: rgb(185, 207, 226);
+}
