@@ -7,10 +7,39 @@
     overflow: hidden;
 }
 
+.about::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(100, 0, 50, 0.1) 0%,
+        rgba(100, 0, 50, 0.1) 50%,
+        rgba(100, 0, 50, 0.1) 75%,
+        rgba(50, 0, 100, 0.1) 100%
+    );
+
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0,
+        rgba(0, 0, 0, 0.2) 12vh,
+        black 30vh
+    );
+
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0,
+        rgba(0, 0, 0, 0.2) 12vh,
+        black 30vh
+    );
+}
+
 .aboutTexts {
     display: flex;
     flex-direction: column;
-    text-shadow: 1px 1px 2px black;
     width: 800px;
     padding-left: 40px;
     padding-right: 30px;
@@ -21,12 +50,16 @@
     font-size: 40px;
 }
 
+.aboutTexts p {
+    text-shadow: 1px 1px 3px black;
+}
+
 .aboutTexts span {
     color: #495393;
 }
 
 .aboutTextsJoke {
-    font-size: 15px;
+    font-size: 17px;
     margin-bottom: 50px;
 }
 
@@ -42,14 +75,11 @@
     width: 280px;
     height: 100%;
     margin-right: 40px;
-    background-color: rgba(250, 0, 100, 0.3);
-    box-shadow: 0px 0px 10px #211f1f;
     border-radius: 15px;
 }
 
 .aboutCard img {
-    padding: 20px 15px 10px 15px;
-    border-radius: 30px;
+    border-radius: 40px;
     height: 85%;
     width: 85%;
 }
@@ -61,4 +91,107 @@
 .aboutName {
     font-weight: 600;
     color: rgba(80, 100, 250);
+}
+
+@media (max-width: 1300px) {
+    .aboutTexts h1 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .aboutTexts {
+        padding-right: 10px;
+        width: 500px;
+    }
+
+    .aboutTexts h1 {
+        font-size: 25px;
+    }
+
+    .aboutTextsJoke {
+        font-size: 14px;
+    }
+
+    .aboutTextsDescription {
+        font-size: 17px;
+    }
+
+    .aboutCard img {
+        width: 70%;
+        height: 70%;
+        margin-right: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        min-height: 100svh;
+        padding: 2.5rem 1rem;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        grid-template-areas:
+            "title"
+            "photo"
+            "joke"
+            "description";
+        align-items: start;
+        justify-content: stretch;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .aboutTexts {
+        display: contents;
+    }
+
+    .aboutTexts h1 {
+        grid-area: title;
+        font-size: 28px;
+        margin: 0;
+    }
+
+    .aboutTextsJoke {
+        grid-area: joke;
+        font-size: 11px;
+        margin: -10px 0 0;
+    }
+
+    .aboutTextsDescription {
+        grid-area: description;
+        font-size: 13px;
+    }
+
+    .aboutCard {
+        grid-area: photo;
+        width: 110px;
+        height: auto;
+        margin-right: 0;
+        justify-self: center;
+        align-self: start;
+    }
+
+    .aboutCard img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .aboutTexts h1 {
+        font-size: 22px;
+    }
+
+    .aboutTextsJoke {
+        font-size: 10px;
+    }
+
+    .aboutTextsDescription {
+        font-size: 13px;
+    }
+
+    .aboutCard {
+        width: 90px;
+    }
 }

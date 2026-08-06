@@ -1,5 +1,5 @@
 import styles from "./About.module.css";
-import profilPic from "../../assets/images/profile-pic.jpg";
+import profilPic from "../../assets/images/profile-pic2.jpg";
 
 export default function About() {
   return (
@@ -35,8 +35,6 @@ export default function About() {
       </div>
       <div className={styles.aboutCard}>
         <img src={profilPic} />
-        <p className={styles.aboutJob}>Developer</p>
-        <p className={styles.aboutName}>Pierre Pruvost</p>
       </div>
     </div>
   );

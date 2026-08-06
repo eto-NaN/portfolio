@@ -10,9 +10,9 @@ function App() {
   const [isProjectsVisible, setIsProjectsVisible] = useState(false);
 
   useEffect(() => {
-    const projectsSection = document.getElementById("projects");
+    const contentSection = document.getElementById("content");
 
-    if (!projectsSection) return;
+    if (!contentSection) return;
 
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -25,7 +25,7 @@ function App() {
       },
     );
 
-    observer.observe(projectsSection);
+    observer.observe(contentSection);
 
     return () => {
       observer.disconnect();
@@ -44,8 +44,10 @@ function App() {
 
       <main>
         <Hero />
-        <About />
-        <Projects />
+        <div id="content">
+          <About />
+          <Projects />
+        </div>
       </main>
       <Footer />
     </div>

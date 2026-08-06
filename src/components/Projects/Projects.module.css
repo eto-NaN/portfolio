@@ -16,21 +16,7 @@
     z-index: 0;
     pointer-events: none;
 
-    background-color: rgba(8, 10, 18, 0.4);
-
-    mask-image: linear-gradient(
-        to bottom,
-        transparent 0,
-        rgba(0, 0, 0, 0.4) 12vh,
-        black 30vh
-    );
-
-    -webkit-mask-image: linear-gradient(
-        to bottom,
-        transparent 0,
-        rgba(0, 0, 0, 0.4) 12vh,
-        black 30vh
-    );
+    background-color: rgba(50, 0, 100, 0.1);
 }
 
 .projectsContent {
