@@ -4,10 +4,13 @@ import profilPic from "../../assets/images/profile-pic2.jpg";
 export default function About() {
   return (
     <div className={styles.about}>
+      <h1 className={styles.aboutTitle}>
+        Who is <span>Pierre Pruvost</span> ?
+      </h1>
+      <div className={styles.aboutCard}>
+        <img src={profilPic} alt="Pierre Pruvost" />
+      </div>
       <div className={styles.aboutTexts}>
-        <h1>
-          Who is <span>Pierre Pruvost</span> ?
-        </h1>
         <p className={styles.aboutTextsJoke}>
           Wait... it's me !!! I am sure i can easily introduce myself to you !
         </p>
@@ -32,9 +35,6 @@ export default function About() {
           open to every type of projects so if you are interested by my profile,
           don't hesitate to contact me at pierre.pruvost@epitech.eu
         </p>
-      </div>
-      <div className={styles.aboutCard}>
-        <img src={profilPic} />
       </div>
     </div>
   );

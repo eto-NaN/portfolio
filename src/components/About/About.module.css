@@ -1,8 +1,13 @@
 .about {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    text-align: center;
+
     min-height: 100svh;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
     position: relative;
     overflow: hidden;
 }
@@ -37,51 +42,50 @@
     );
 }
 
-.aboutTexts {
-    display: flex;
-    flex-direction: column;
-    width: 800px;
-    padding-left: 40px;
-    padding-right: 30px;
+.aboutTitle {
+    margin: 0;
+    font-size: 40px;
     color: white;
 }
 
-.aboutTexts h1 {
-    font-size: 40px;
-}
-
-.aboutTexts p {
-    text-shadow: 1px 1px 3px black;
-}
-
-.aboutTexts span {
+.aboutTitle span {
     color: #495393;
+}
+
+.aboutTextsJoke,
+.aboutTextsDescription {
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    max-width: 900px;
+    margin: 0;
 }
 
 .aboutTextsJoke {
     font-size: 17px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .aboutTextsDescription {
     font-size: 20px;
+    margin-top: 10px;
 }
 
 .aboutCard {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     width: 280px;
-    height: 100%;
-    margin-right: 40px;
+    height: auto;
     border-radius: 15px;
+    margin-top: 6px;
 }
 
 .aboutCard img {
     border-radius: 40px;
-    height: 85%;
-    width: 85%;
+    width: 60%;
+    height: auto;
+    display: block;
 }
 
 .aboutJob {
@@ -94,19 +98,26 @@
 }
 
 @media (max-width: 1300px) {
-    .aboutTexts h1 {
+    .aboutTitle {
         font-size: 35px;
+    }
+
+    .aboutTextsDescription {
+        font-size: 18px;
+    }
+
+    .aboutCard {
+        width: 240px;
     }
 }
 
 @media (max-width: 1024px) {
-    .aboutTexts {
-        padding-right: 10px;
-        width: 500px;
+    .about {
+        padding: 2.5rem 1.25rem;
     }
 
-    .aboutTexts h1 {
-        font-size: 25px;
+    .aboutTitle {
+        font-size: 30px;
     }
 
     .aboutTextsJoke {
@@ -117,69 +128,43 @@
         font-size: 17px;
     }
 
-    .aboutCard img {
-        width: 70%;
-        height: 70%;
-        margin-right: 0px;
+    .aboutCard {
+        width: 170px;
     }
 }
 
 @media (max-width: 768px) {
     .about {
-        min-height: 100svh;
         padding: 2.5rem 1rem;
-        display: grid;
-        grid-template-columns: minmax(0, 1fr);
-        grid-template-areas:
-            "title"
-            "photo"
-            "joke"
-            "description";
-        align-items: start;
-        justify-content: stretch;
-        justify-items: center;
-        text-align: center;
+    }
+
+    .aboutTitle {
+        font-size: 28px;
     }
 
     .aboutTexts {
-        display: contents;
-    }
-
-    .aboutTexts h1 {
-        grid-area: title;
-        font-size: 28px;
-        margin: 0;
+        max-width: 600px;
     }
 
     .aboutTextsJoke {
-        grid-area: joke;
-        font-size: 11px;
-        margin: -10px 0 0;
-    }
-
-    .aboutTextsDescription {
-        grid-area: description;
         font-size: 13px;
     }
 
+    .aboutTextsDescription {
+        font-size: 16px;
+    }
+
     .aboutCard {
-        grid-area: photo;
         width: 110px;
-        height: auto;
-        margin-right: 0;
-        justify-self: center;
-        align-self: start;
     }
 
     .aboutCard img {
-        width: 100%;
-        height: auto;
         border-radius: 20px;
     }
 }
 
 @media (max-width: 480px) {
-    .aboutTexts h1 {
+    .aboutTitle {
         font-size: 22px;
     }
 
