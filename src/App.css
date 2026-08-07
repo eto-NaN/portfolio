@@ -28,7 +28,7 @@ main {
 }
 
 .siteBackgroundBlurred {
-    filter: blur(10px);
+    filter: blur(15px);
     transform: scale(1.035);
 }
 
