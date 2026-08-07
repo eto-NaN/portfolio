@@ -4,9 +4,10 @@ export default function Hero() {
   return (
     <section className={styles.hero} aria-label="Hero section">
       <div className={styles.heroContent}>
-        <h1>Hello !</h1>
+        <h1>Welcome</h1>
         <h3 className={styles.subtitle}>
-          I am <span className={styles.highlight}>PIERRE PRUVOST</span>
+          to <span className={styles.highlight}>Pierre Pruvost</span>'s
+          developer journey
         </h3>
       </div>
     </section>
