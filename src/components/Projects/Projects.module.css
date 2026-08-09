@@ -144,11 +144,7 @@
 }
 
 .projectCardPopup {
-    background: linear-gradient(
-        160deg,
-        rgba(150, 0, 80, 0.94),
-        rgba(20, 4, 10, 0.94)
-    );
+    background: linear-gradient(160deg, #fa0082, rgba(10, 4, 10, 1));
     color: white;
     display: flex;
     flex-direction: column;
