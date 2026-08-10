@@ -33,10 +33,12 @@
 
     gap: 30px 30px;
     margin: 5px;
+
+    font-size: 18px;
 }
 
-.projectsContent p {
-    font-size: 18px;
+.projectCardYear {
+    font-size: 14px;
 }
 
 .projectsHeader {
