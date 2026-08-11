@@ -23,7 +23,7 @@ export default function About() {
           it, I decided to go to Epitech (until 2028) to consolidate what i had
           begun to learn alone, but mainly to discover other domains than
           front-end and put into practice all my skills across many projects and
-          internship.
+          internships.
           <br />
           <br />
           After these years, I can affirm I have no regret to have left
