@@ -18,13 +18,19 @@ html {
 }
 
 @font-face {
-    font-family: my_jetbrains;
-    src: url(JetBrainsMono-Variable.ttf);
+    font-family: "my_jetbrains";
+    src:
+        url("/JetBrainsMono-Variable.woff2") format("woff2"),
+        url("/JetBrainsMono-Variable.woff") format("woff"),
+        url("/JetBrainsMono-Variable.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 100 800;
+    font-display: swap;
 }
 
 body {
     font-family:
-        my_jetbrains,
+        "my_jetbrains",
         -apple-system,
         BlinkMacSystemFont,
         "Segoe UI",
