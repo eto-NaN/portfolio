@@ -10,6 +10,17 @@ export interface ExperienceCard {
   tags: string[];
 }
 
+export interface SchoolCard {
+  id: number;
+  title: string;
+  date: string;
+  company: string;
+  shortDescription: string;
+  bigDescription: string;
+  link: string;
+  tags: string[];
+}
+
 export const ExperiencesCardTab: ExperienceCard[] = [
   {
     id: 1,
@@ -34,6 +45,29 @@ export const ExperiencesCardTab: ExperienceCard[] = [
     bigDescription:
       "CPF (https://travail-emploi.gouv.fr/le-compte-personnel-de-formation-cpf) is a product created and managed by the company. As it concerns every worker in France, there are many datas to analyze/use and as it involves a lot of money, there are many fraudsters. During this internship, i built tools allowing fraud prevention officer to better do there job (creation of relationship graphs between individuals and organizations for exemple). I also contribuated to create a new search engine (benchmarking and comparative evaluation of natural language processing (NLP) models algorithm). As I worked with data scientists, I had the opportunity to bring them some good practice in their works such as a better use of git alone and in team.",
     link: "",
-    tags: ["NLP", "Data", "IHM"],
+    tags: ["NLP", "Data", "IHM", "Python"],
+  },
+];
+
+export const SchoolsCardTab: SchoolCard[] = [
+  {
+    id: 1,
+    title: "Grande Ecole Program",
+    date: "2023 - 2028",
+    company: "Epitech Paris",
+    shortDescription: "",
+    bigDescription: "",
+    link: "",
+    tags: [""],
+  },
+  {
+    id: 2,
+    title: "Bachelor Accounting and Managment",
+    date: "2020 - 2023",
+    company: "Lycée Léonard de Vinci, Melun",
+    shortDescription: "",
+    bigDescription: "",
+    link: "",
+    tags: [""],
   },
 ];
