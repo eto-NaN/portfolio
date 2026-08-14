@@ -3,7 +3,7 @@ import profilPic from "../../assets/images/profile-pic2.jpg";
 
 export default function About() {
   return (
-    <div className={styles.about}>
+    <section className={styles.about} aria-label="About section">
       <h1 className={styles.aboutTitle}>
         Who is <span>Pierre Pruvost</span> ?
       </h1>
@@ -36,6 +36,6 @@ export default function About() {
           don't hesitate to contact me at pierre.pruvost@epitech.eu
         </p>
       </div>
-    </div>
+    </section>
   );
 }
