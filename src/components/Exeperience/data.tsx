@@ -15,8 +15,7 @@ export interface SchoolCard {
   title: string;
   date: string;
   company: string;
-  shortDescription: string;
-  bigDescription: string;
+  Description: string;
   link: string;
   tags: string[];
 }
@@ -55,8 +54,7 @@ export const SchoolsCardTab: SchoolCard[] = [
     title: "Grande Ecole Program",
     date: "2023 - 2028",
     company: "Epitech Paris",
-    shortDescription: "",
-    bigDescription: "",
+    Description: "",
     link: "",
     tags: [""],
   },
@@ -65,8 +63,7 @@ export const SchoolsCardTab: SchoolCard[] = [
     title: "Bachelor Accounting and Managment",
     date: "2020 - 2023",
     company: "Lycée Léonard de Vinci, Melun",
-    shortDescription: "",
-    bigDescription: "",
+    Description: "",
     link: "",
     tags: [""],
   },
