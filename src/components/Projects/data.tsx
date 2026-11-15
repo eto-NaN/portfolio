@@ -31,9 +31,9 @@ export const ProjectsCardTab: PorjectCard[] = [
     shortDescription:
       "Network library in cpp easy to use for UDP and TCP networking.",
     bigDescription:
-      "This project is a network library in C\u2060++ that provides easy-to-use abstractions for UDP and TCP networking. We bring all the tools needed to build network applications such as easy creation and usage of servers and clients, basic message handling, a logger to watch the network traffic etc.",
+      "This project is a network library in cpp that provides easy-to-use abstractions for UDP and TCP networking. We bring all the tools needed to build network applications such as easy creation and usage of servers and clients, basic message handling, a logger to watch the network traffic etc.",
     link: "https://github.com/TrueMoonn/Network",
-    tags: ["C\u2060++", "Network"],
+    tags: ["C++", "Network"],
   },
 
   {
@@ -55,10 +55,10 @@ export const ProjectsCardTab: PorjectCard[] = [
     title: "protocol-codegen-cpp",
     year: 2025,
     shortDescription:
-      "Takes a network protocol definition in JSON and produces C\u2060++ structs and methods.",
+      "Takes a network protocol definition in JSON and produces cpp structs and methods.",
     bigDescription:
-      "A code generator that takes a JSON protocol definition and produces C\u2060++ structs with serialize / deserialize methods. Each message becomes a C\u2060++ struct with:\nAn ID identifying the message\nA serialize() method returning std::vector<uint8_t>\nA deserialize(const std::vector<uint8_t>&) factory method\n\nHere are all the types supported in the structure for your packets: uint8-uint64, int8-int64, float, double, string, fixed array, dynamic array. With that, you can easily use any protocol with this tool for your application.",
+      "A code generator that takes a JSON protocol definition and produces cpp structs with serialize / deserialize methods. Each message becomes a cpp struct with:\nAn ID identifying the message\nA serialize() method returning std::vector<uint8_t>\nA deserialize(const std::vector<uint8_t>&) factory method\n\nHere are all the types supported in the structure for your packets: uint8-uint64, int8-int64, float, double, string, fixed array, dynamic array. With that, you can easily use any protocol with this tool for your application.",
     link: "https://github.com/eto-NaN/protocol-codegen-cpp",
-    tags: ["Python", "C\u2060++"],
+    tags: ["Python", "C++"],
   },
 ];
