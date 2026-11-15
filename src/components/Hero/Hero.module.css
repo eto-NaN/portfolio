@@ -7,8 +7,6 @@
     padding: 2rem 1rem;
 }
 
-/* Voile local derrière le texte : assombrit la zone utile
-   sans cacher le reste de l'illustration */
 .hero::before {
     content: "";
     position: absolute;
@@ -48,7 +46,7 @@
 }
 
 .highlight {
-    color: #9fd0ff; /* bleu ciel de l'illustration */
+    color: #9fd0ff;
     font-weight: 700;
 }
 
