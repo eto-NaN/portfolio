@@ -20,8 +20,20 @@
     pointer-events: none;
     background: rgba(15, 15, 18, 0.5);
 
-    mask-image: linear-gradient(to bottom, transparent 0, black 30vh);
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0, black 30vh);
+    mask-image: linear-gradient(
+        to bottom,
+        transparent 0,
+        black 30vh,
+        black calc(100% - 30vh),
+        transparent 100%
+    );
+    -webkit-mask-image: linear-gradient(
+        to bottom,
+        transparent 0,
+        black 30vh,
+        black calc(100% - 30vh),
+        transparent 100%
+    );
 }
 
 .about > * {
